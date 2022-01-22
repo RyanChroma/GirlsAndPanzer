@@ -36,6 +36,5 @@ public class Movement1 : MonoBehaviour
             Quaternion deltaRotationLeft = Quaternion.Euler(rotationLeft * Time.deltaTime);
             rb.MoveRotation(rb.rotation * deltaRotationLeft);
         }
-
-}
+    }
 }
