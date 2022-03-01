@@ -16,7 +16,7 @@ public class CameraMovementScript : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     void Update()
