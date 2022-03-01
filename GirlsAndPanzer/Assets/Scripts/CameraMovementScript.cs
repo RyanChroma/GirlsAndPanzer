@@ -8,8 +8,8 @@ public class CameraMovementScript : MonoBehaviour
     public float zoomSpeed = 30.0f;
     //public float rotateSpeed = 0.1f;
 
-    float maxHeight = 60f;
-    float minHeight = 10f;
+    /*float maxHeight = 60f;
+    float minHeight = 10f;*/
 
     Vector2 p1;
     Vector2 p2;
@@ -34,9 +34,9 @@ public class CameraMovementScript : MonoBehaviour
 
         float hsp = Mathf.Log(transform.position.y) * speed * Input.GetAxis("Horizontal");
         float vsp = Mathf.Log(transform.position.y) * speed *Input.GetAxis("Vertical");
-        float scrollSP = Mathf.Log(transform.position.y) * -zoomSpeed * Input.GetAxis("Mouse ScrollWheel");
+        //float scrollSP = Mathf.Log(transform.position.y) * -zoomSpeed * Input.GetAxis("Mouse ScrollWheel");
 
-        if((transform.position.y >= maxHeight) && (scrollSP > 0))
+        /*if((transform.position.y >= maxHeight) && (scrollSP > 0))
         {
             scrollSP = 0;
         }
@@ -52,9 +52,9 @@ public class CameraMovementScript : MonoBehaviour
         else if((transform.position.y + scrollSP) < minHeight)
         {
             scrollSP = minHeight - transform.position.y;
-        }
+        }*/
 
-        Vector3 verticalMove = new Vector3(0, scrollSP, 0);
+        Vector3 verticalMove = new Vector3(0, 0, 0);
         Vector3 lateralMove = hsp * transform.right;
         Vector3 forwardMove = transform.forward;
         forwardMove.y = 0;
