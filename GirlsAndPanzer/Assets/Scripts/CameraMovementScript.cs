@@ -6,7 +6,7 @@ public class CameraMovementScript : MonoBehaviour
 {
     public float speed = 0.1f;
     public float zoomSpeed = 30.0f;
-    //public float rotateSpeed = 0.1f;
+    public float rotateSpeed = 0.1f;
 
     /*float maxHeight = 60f;
     float minHeight = 10f;*/
@@ -79,10 +79,10 @@ public class CameraMovementScript : MonoBehaviour
         {
             p2 = Input.mousePosition;
 
-            /*float dx = (p1-p2).x * rotateSpeed;
-            float dy = (p2-p1).y * rotateSpeed;*/
+            float dx = (p1-p2).x * rotateSpeed;
+            float dy = (p2-p1).y * rotateSpeed;
 
-            //transform.rotation *= Quaternion.Euler(new Vector3(0, dx, 0)); //Y rotation.
+            transform.rotation *= Quaternion.Euler(new Vector3(0, dx, 0)); //Y rotation.
 
             p1 = p2;
         }
