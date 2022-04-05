@@ -398,17 +398,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WASD to move camera
-
-    Middle mouse to rotate camera
+  m_Text: 'WASD to move
 
 
-    left click
-    to move player
+    Mouse to Look
 
-    get in range to attack
 
-    attacking is automatic'
+    Left Click to Shoot
+
+
+    Space
+    to Jump'
 --- !u!222 &668897571
 CanvasRenderer:
   m_ObjectHideFlags: 0
