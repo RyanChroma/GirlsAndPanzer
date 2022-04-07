@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 910, y: 442}
   m_MaxSize: {x: 22005, y: 10021}
   vertical: 0
-  controlID: 17328
+  controlID: 15724
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 17329
+  controlID: 15725
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -410,9 +410,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.0223076, y: 0.31364968, z: -0.9127064}
+    m_Target: {x: 17.253462, y: -7.2806487, z: -4.343941}
     speed: 2
-    m_Value: {x: -2.0223076, y: 0.31364968, z: -0.9127064}
+    m_Value: {x: 17.253462, y: -7.2806487, z: -4.343941}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -459,20 +459,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08107739, y: 0.5895398, z: -0.059611324, w: 0.8014095}
+    m_Target: {x: 0.11728283, y: 0.77094966, z: -0.14864342, w: 0.60796833}
     speed: 2
-    m_Value: {x: 0.07978928, y: 0.5908475, z: -0.05884848, w: 0.8006683}
+    m_Value: {x: 0.11615856, y: 0.7721453, z: -0.14767325, w: 0.60703504}
   m_Size:
-    m_Target: 0.033974648
+    m_Target: 10
     speed: 2
-    m_Value: 0.033974648
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.12
-    m_SpeedNormalized: 0.5597799
+    m_Speed: 0.3
+    m_SpeedNormalized: 0.14957479
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -512,8 +512,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 825.4
-    height: 489.4
+    width: 825
+    height: 489
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -76640
+  m_LastSelectedObjectID: 17298
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -571,9 +571,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a0d4feff
-      m_LastClickedID: -76640
-      m_ExpandedIDs: d439ffff3a3cffff7c3cffff7c87ffff0ec5ffff2cc5ffff5ec5ffff80c5ffff94caffff62d9ffff5edaffffeadaffff48ddffffbedfffff46e3ffff2cf7ffff70fbffff10500000625000002e5d0000
+      m_SelectedIDs: e8720000
+      m_LastClickedID: 29416
+      m_ExpandedIDs: 92fefdff0408feff0ecfffff40fbffff92430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -635,22 +635,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\ttff2\Documents\GitHub\GirlsAndPanzer\GirlsAndPanzer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a470000
-    m_LastClickedID: 18250
-    m_ExpandedIDs: 000000000e470000104700003e47000000ca9a3b
+    m_SelectedIDs: 46440000
+    m_LastClickedID: 17478
+    m_ExpandedIDs: 00000000fe430000004400000244000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -678,7 +678,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e470000104700003e47000000ca9a3b
+    m_ExpandedIDs: 00000000fe430000004400000244000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -705,7 +705,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 5a620500
     m_RenameOverlay:
       m_UserAcceptedRename: 0

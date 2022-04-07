@@ -570,6 +570,7 @@ GameObject:
   - component: {fileID: 1602946221}
   - component: {fileID: 1602946222}
   - component: {fileID: 1602946223}
+  - component: {fileID: 1602946224}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Untagged
@@ -632,6 +633,21 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1602946224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602946220}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7ddf7b665b1a74cbcc6b08d95195d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHeight: {fileID: 1602946222}
+  normalHeight: 2
+  crouchHeight: 0.5
 --- !u!43 &1785323151
 Mesh:
   m_ObjectHideFlags: 0
