@@ -204,9 +204,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 16.680386, y: -3.0064185, z: 10.184454}
+    m_Target: {x: 16.33333, y: -3.774595, z: 10.446692}
     speed: 2
-    m_Value: {x: 16.680386, y: -3.0064185, z: 10.184454}
+    m_Value: {x: 16.33333, y: -3.774595, z: 10.446692}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -253,9 +253,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.068089336, y: 0.46597078, z: -0.03600089, w: 0.8814148}
+    m_Target: {x: 0.0857319, y: 0.45591554, z: -0.044181395, w: 0.88475513}
     speed: 2
-    m_Value: {x: 0.06809094, y: 0.46598175, z: -0.03600174, w: 0.8814355}
+    m_Value: {x: 0.085733935, y: 0.45592636, z: -0.044182442, w: 0.8847761}
   m_Size:
     m_Target: 10
     speed: 2
@@ -509,21 +509,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\ttff2\Documents\GitHub\GirlsAndPanzer\GirlsAndPanzer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96450000
-    m_LastClickedID: 17814
+    m_SelectedIDs: 98450000
+    m_LastClickedID: 17816
     m_ExpandedIDs: 000000004a4500004c4500004e45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
