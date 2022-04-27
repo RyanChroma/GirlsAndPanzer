@@ -8,8 +8,13 @@ public class Player : MonoBehaviour
     public Camera playerCamera;
 
     [Header("Gameplay")]
-    public int initialAmmo = 200;
+    public int initialHealth;
+    public int health;
+    public int Health { get { return health; } }
+
+    public int initialAmmo;
     public int ammo;
+    public int Ammo { get { return ammo; } }
     public GameObject bulletPrefab;
 
     void Start()
@@ -31,4 +36,16 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+	void OnControllerColliderHit(ControllerColliderHit hit)
+	{
+        Debug.Log(hit.collider.name);
+		if(hit.collider.GetComponent<AmmoCrate>().gameObject.GetComponent<AmmoCrate>() != null)
+		{
+            AmmoCrate ammoCrate = hit.collider.GetComponent<AmmoCrate>().gameObject.GetComponent<AmmoCrate>();
+            ammo += ammoCrate.ammo;
+
+            Destroy(ammoCrate.gameObject);
+        }
+	}
 }
