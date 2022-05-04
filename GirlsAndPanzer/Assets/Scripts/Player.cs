@@ -10,12 +10,15 @@ public class Player : MonoBehaviour
     [Header("Gameplay")]
     public int initialHealth;
     public int health;
+    public float knockbackForce;
+    public float hurtDuration;
     public int Health { get { return health; } }
 
     public int initialAmmo;
     public int ammo;
     public int Ammo { get { return ammo; } }
     public GameObject bulletPrefab;
+    public bool isHurt;
 
     void Start()
     {
@@ -40,12 +43,36 @@ public class Player : MonoBehaviour
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
         Debug.Log(hit.collider.name);
-		if(hit.collider.GetComponent<AmmoCrate>().gameObject.GetComponent<AmmoCrate>() != null)
-		{
+		if(hit.collider.GetComponent<AmmoCrate>() != null)
+		{   //Collide with ammo crates.
             AmmoCrate ammoCrate = hit.collider.GetComponent<AmmoCrate>().gameObject.GetComponent<AmmoCrate>();
             ammo += ammoCrate.ammo;
-
             Destroy(ammoCrate.gameObject);
         }
+
+        else if(hit.collider.GetComponent<Enemy>() != null)
+		{
+            if(isHurt == false)
+			{
+                Enemy enemy = hit.collider.GetComponent<Enemy>();
+                health -= enemy.damage;
+
+                isHurt = true;
+
+                //Perform the knockback effect.
+                Vector3 hurtDirection = (transform.position - enemy.transform.position).normalized;
+                Vector3 knockbackDirection = (hurtDirection + Vector3.up).normalized;
+                GetComponent<ForceReceiver>().AddForce(knockbackDirection, knockbackForce);
+
+                StartCoroutine(HurtRoutine());
+            }
+		}
+	}
+
+    IEnumerator HurtRoutine()
+	{
+        yield return new WaitForSeconds(hurtDuration);
+
+        isHurt = false;
 	}
 }
