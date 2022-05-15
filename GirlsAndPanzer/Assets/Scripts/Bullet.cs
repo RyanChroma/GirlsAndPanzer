@@ -6,7 +6,11 @@ public class Bullet : MonoBehaviour
 {
     public float speed;
     public float lifeDuration;
+    public int damage;
+
     public float lifeTimer;
+    private bool shotByPlayer;
+    public bool ShotByPlayer { get { return shotByPlayer; } set { shotByPlayer = value; } }
 
     void OnEnable()
     {

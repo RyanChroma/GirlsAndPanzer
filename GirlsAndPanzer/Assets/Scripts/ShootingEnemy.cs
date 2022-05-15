@@ -23,7 +23,7 @@ public class ShootingEnemy : MonoBehaviour
 		{
             shootingTimer = shootingInterval;
 
-            GameObject bullet = ObjectPoolingManager.Instance.GetBullet();
+            GameObject bullet = ObjectPoolingManager.Instance.GetBullet(false);
             bullet.transform.position = transform.position;
             bullet.transform.forward = (player.transform.position - transform.position).normalized;
 		}
